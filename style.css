@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 14%;
+    border: 2px solid gray;
+    border-radius: 50%/50%;
+    margin-right: 20px;
+}
+.container{
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+}
+.user{
+    font-family: Arial, Helvetica, sans-serif;
+    background: aliceblue;
+    padding: 1%;
+    /* border-radius: 6%/40%; */
+    box-shadow: 4px 4px rgba(40, 37, 37, 0.598);
+}
+.currentUsr{
+    font-size: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+.crntUsr{
+    font-weight: 700;
+    font-size: 120%;
+    color: rgb(97, 97, 97);
+}
+.usrUpdt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.usrUpdtBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+}
+.usrUpdtBtn button{
+    border-radius: 10%/20%;
+    font-size: 80%;
+    padding: 4%;
+    margin-top: 5%;
+    background-color: gray;
+    border: gray;
+    color: aliceblue;
+}
+.usrUpdtBtn button:hover{
+    background-color: rgb(109, 108, 108);
+}
+.usrUpdtBtn button:active{
+    background-color: rgb(90, 90, 90);
+}
+.recorder{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.wrapper{
+    padding-left: 20%;
+}
+.bodyBtns{
+    width: 20%;
+    /* width: 40% for mobile phones */
+    /* width 20% fro mobile phones */
+    height: 9%;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+}
+.bodyBtns tr,td{
+    padding: 0px;
+    margin: 0px;
+}
+.bodyBtns td button{
+    border: none;
+}
+.bodyParts{
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+}
+.bodyParts:hover{
+    border: 2px solid black;
+}
+.painRating{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    position: absolute;
+    height: 20%;
+    width: 40%;
+    top: 14%;
+    right: 0px;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+.painRating button{
+    border-radius: 20%/20%;
+    margin-left: 40%;
+    padding: 1%;
+    background-color: gray;
+    border: gray;
+    color: aliceblue;
+}
+.painRating button:hover{
+    background-color: rgb(97, 96, 96);
+}
+.painRating button:active{
+    background-color: rgb(76, 75, 75);
+}
+.collapseBtn{
+    position: absolute;
+    right: 10%;
+}
+.container-fluid{
+    position: relative;
+}
+.range{
+    height: 2px;
+    margin: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: gray;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+.record{
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    width: 40%;
+    height: auto;
+    border: 2px solid black;
+    text-align: center;
+    gap: 20%;
+    border-spacing: 20%;
+    overflow-x: auto;
+}
+#userBTN{
+    padding: 4%;
+}
+@media only screen and (max-width: 600px) {
+    .bodyParts{
+        width: 100%;
+        height: 100%;
+    }
+    .painRating{
+        font-size: 75%;
+        position: absolute;
+        height: 20%;
+        width: 40%;
+        top: 4%;
+        right: 0px;
+    }
+    .bodyBtns{
+        width: 40%;
+    }
+    .wrapper{
+        padding-left: 0%;
+    }
+    .bodyParts:hover{
+        border: none;
+    }
+    #dataRecord{
+        width: 40%;
+    }
+}

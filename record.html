@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recording</title>
+    <link rel="icon" href="./src/logo/iconRecord.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./record_style.css">
+</head>
+<body>
+    <a href="./index.html" style="text-decoration: none;color: rgb(23, 209, 209);font-weight: 800;font-size: 150%;border: 2px solid rgb(88, 88, 232);padding: 1%;border-radius: 10%;position: absolute;top: 3%;left: 2%;background-color: whitesmoke;">Back</a> 
+    <div class="area1">
+        
+        <div id="myChart1" style="width: 30%;height:auto"></div>
+        
+        
+            <table class="bodyBtns" border="0px">
+                <tr><td colspan="100%" style="text-align: center;padding-bottom: 2%;color: aliceblue;"><h3>Frequency diagram</h3></td></tr>
+                <tr>
+                    <td><button id="bp11"><img class="bodyParts" src="./src/body/Specifics/b1/image1x1.jpg" alt=""></button></td>
+                    <td><button id="bp21"><img class="bodyParts" src="./src/body/Specifics/b1/image2x1.jpg" alt=""></button></td>
+                    <td><button id="bp31"><img class="bodyParts" src="./src/body/Specifics/b1/image3x1.jpg" alt=""></button></td>
+                    <td><button id="bp41"><img class="bodyParts" src="./src/body/Specifics/b1/image4x1.jpg" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><button id="bp12"><img class="bodyParts" src="./src/body/Specifics/b1/image1x2.jpg" alt=""></button></td>
+                    <td><button id="bp22"><img class="bodyParts" src="./src/body/Specifics/b1/image2x2.jpg" alt=""></button></td>
+                    <td><button id="bp32"><img class="bodyParts" src="./src/body/Specifics/b1/image3x2.jpg" alt=""></button></td>
+                    <td><button id="bp42"><img class="bodyParts" src="./src/body/Specifics/b1/image4x2.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp13"><img class="bodyParts" src="./src/body/Specifics/b1/image1x3.jpg" alt=""></button></td>
+                    <td><button id="bp23"><img class="bodyParts" src="./src/body/Specifics/b1/image2x3.jpg" alt=""></button></td>
+                    <td><button id="bp33"><img class="bodyParts" src="./src/body/Specifics/b1/image3x3.jpg" alt=""></button></td>
+                    <td><button id="bp43"><img class="bodyParts" src="./src/body/Specifics/b1/image4x3.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp14"><img class="bodyParts" src="./src/body/Specifics/b1/image1x4.jpg" alt=""></button></td>
+                    <td><button id="bp24"><img class="bodyParts" src="./src/body/Specifics/b1/image2x4.jpg" alt=""></button></td>
+                    <td><button id="bp34"><img class="bodyParts" src="./src/body/Specifics/b1/image3x4.jpg" alt=""></button></td>
+                    <td><button id="bp44"><img class="bodyParts" src="./src/body/Specifics/b1/image4x4.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp15"><img class="bodyParts" src="./src/body/Specifics/b1/image1x5.jpg" alt=""></button></td>
+                    <td><button id="bp25"><img class="bodyParts" src="./src/body/Specifics/b1/image2x5.jpg" alt=""></button></td>
+                    <td><button id="bp35"><img class="bodyParts" src="./src/body/Specifics/b1/image3x5.jpg" alt=""></button></td>
+                    <td><button id="bp45"><img class="bodyParts" src="./src/body/Specifics/b1/image4x5.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp16"><img class="bodyParts" src="./src/body/Specifics/b1/image1x6.jpg" alt=""></button></td>
+                    <td><button id="bp26"><img class="bodyParts" src="./src/body/Specifics/b1/image2x6.jpg" alt=""></button></td>
+                    <td><button id="bp36"><img class="bodyParts" src="./src/body/Specifics/b1/image3x6.jpg" alt=""></button></td>
+                    <td><button id="bp46"><img class="bodyParts" src="./src/body/Specifics/b1/image4x6.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp17"><img class="bodyParts" src="./src/body/Specifics/b1/image1x7.jpg" alt=""></button></td>
+                    <td><button id="bp27"><img  class="bodyParts" src="./src/body/Specifics/b1/image2x7.jpg" alt=""></button></td>
+                    <td><button id="bp37"><img class="bodyParts" src="./src/body/Specifics/b1/image3x7.jpg" alt=""></button></td>
+                    <td><button id="bp47"><img class="bodyParts" src="./src/body/Specifics/b1/image4x7.jpg" alt=""></button></td>
+                </tr><tr>
+                    <td><button id="bp18"><img class="bodyParts" src="./src/body/Specifics/b1/image1x8.jpg" alt=""></button></td>
+                    <td><button id="bp28"><img class="bodyParts" src="./src/body/Specifics/b1/image2x8.jpg" alt=""></button></td>
+                    <td><button id="bp38"><img class="bodyParts" src="./src/body/Specifics/b1/image3x8.jpg" alt=""></button></td>
+                    <td><button id="bp48"><img  class="bodyParts" src="./src/body/Specifics/b1/image4x8.jpg" alt=""></button></td>
+                </tr>
+            </table>
+            
+    </div>
+    <div class="record">
+        <table id="dataRecord" style="width: 100%;">
+            <tr><th>index</th><th>time stamp</th><th>difficulty</th></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </div>
+    
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./record_script.js"></script>
+</body>
+</html>
